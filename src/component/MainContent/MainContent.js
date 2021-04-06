@@ -7,11 +7,11 @@ import ResumeContainer from './ResumeContainer/ResumeContainer';
 import ProjectContainer from './ProjectContainer/ProjectContainer';
 
 const MainContentStyle = styled.div`
-color: white;
+  color: white;
   display: flex;
   flex-direction: column;
   align-items: center;
-  border: 1px solid blue;
+  border: 1px solid white;
   height: 100%;
   width: 75%;
   border-radius: 30px;
@@ -32,9 +32,6 @@ function MainContent(){
                     </Route>
                     <Route exact path="/Projects">
                         <ProjectContainer></ProjectContainer>
-                    </Route>
-                    <Route exact path="/Resume">
-                        <ResumeContainer></ResumeContainer>
                     </Route>
                 </Switch>
             </MainContentStyle>

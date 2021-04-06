@@ -1,28 +1,36 @@
 import React from 'react';
 import styled from 'styled-components';
 
-const ExperienceStyle = styled.div`
-display: flex;
-flex-direction: column;
-border: 1px solid blue;
-width:50%;
-
+const ExperienceContainer = styled.div`
+height: 65%;
+padding: 10px;
+/* display: flex;
+flex-direction: column; */
     @media(max-width: 992px) {
-        width: 100%;
+        height: 100%;
+    }
+`;
+
+const ExperienceTitle = styled.div`
+display: inline-block;
+font-size: 24px;
+border-bottom: 3px solid white;
+`;
+
+const ExperienceContent = styled.div`
+padding: 10px;
+    @media(max-width: 992px) {
     }
 `;
 
 
-const ExperienceFirst = styled.div`
-border: 1px solid red;
-padding: 10px;
-`;
 function AboutExperience() {
 
     return(
-        <ExperienceStyle>
-            <ExperienceFirst>첫 번째</ExperienceFirst>
-        </ExperienceStyle>
+        <ExperienceContainer>
+            <ExperienceTitle>Experience</ExperienceTitle>
+            <ExperienceContent>asd</ExperienceContent>
+        </ExperienceContainer>
     );
 }
 

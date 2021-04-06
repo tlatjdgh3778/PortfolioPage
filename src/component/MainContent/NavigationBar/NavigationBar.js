@@ -38,9 +38,6 @@ border: 1px solid green;
 const AboutBtn = styled.button`
 
 `;
-const ResumeBtn = styled.button`
-
-`;
 const ProjectsBtn = styled.button`
 
 `;
@@ -55,9 +52,6 @@ const [page, setPage] = useState('About');
 
                 <NavLink to="/">
                     {page !== "About" && <AboutBtn onClick={() => setPage('About')} value="About">About</AboutBtn>}
-                </NavLink>
-                <NavLink to="/Resume">
-                    {page !== "Resume" && <ResumeBtn onClick={() => setPage('Resume')} value="Resume">Resume</ResumeBtn>}
                 </NavLink>
                 <NavLink to="/Projects">
                     {page !== "Projects" && <ProjectsBtn onClick={() => setPage('Projects')} value="Projects">Projects</ProjectsBtn>}
