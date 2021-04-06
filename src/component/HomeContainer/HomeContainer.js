@@ -4,13 +4,13 @@ import MainContent from '../MainContent/MainContent';
 import SideBar from '../SideBar/SideBer';
 
 const HomeContainerStyle = styled.div`
+border: 2px solid gold;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 10vh auto;
+  margin: 9vh auto;
   max-width: 1200px;
   height: 80vh;
-  border-radius: 30px;
   
   @media(max-width: 1200px) {
     max-width: 992px;
@@ -18,12 +18,10 @@ const HomeContainerStyle = styled.div`
   @media(max-width: 992px) {
     width: 768px;
     flex-direction: column;
-    height: 100vh;
   }
   @media(max-width: 768px) {
-    width: 400px;
+    width: 600px;
     flex-direction: column;
-    height: 100vh;
   }
 `;
 

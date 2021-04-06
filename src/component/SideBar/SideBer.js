@@ -18,6 +18,7 @@ color: white;
 
   @media(max-width: 992px) {
       width: 95%;
+      height: auto;
   }
 `;
 

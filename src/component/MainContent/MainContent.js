@@ -18,6 +18,7 @@ const MainContentStyle = styled.div`
 
   @media(max-width: 992px) {
       width: 95%;
+      margin: 30px 0;
   }
 `;
 
