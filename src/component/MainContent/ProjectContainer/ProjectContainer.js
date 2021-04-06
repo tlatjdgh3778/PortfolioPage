@@ -8,7 +8,7 @@ width: 90%;
 height: 80%;
 border: 1px solid blue;
 margin: 20px 0;
-overflow: scroll;
+overflow-y: scroll;
 
     @media(max-width: 768px) {
         margin: 10px 0;
@@ -38,7 +38,6 @@ margin: 10px;
 display: flex;
 flex-wrap: wrap;
 justify-content: space-between;
-overflow: scroll;
 `;
 
 const ListContainer = styled.div`
