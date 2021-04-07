@@ -1,8 +1,10 @@
-import React from 'react';
+import React, { useState } from 'react';
 import styled from 'styled-components';
 import {Github}  from '@styled-icons/boxicons-logos';
-import pic from '../ProjectContainer/pic.png';
+import movieapp from '../ProjectContainer/movie-app.png';
 import { device } from '../../../style/variable';
+import project_data from '../../data_folder/project_data';
+import ProjectCard from './ProjectCard';
 
 const ProjectContainerStyle = styled.div`
 width: 90%;
@@ -35,93 +37,28 @@ const ProjectList = styled.div`
 margin: 10px;
 display: flex;
 flex-wrap: wrap;
-justify-content: space-between;
 `;
 
-const ListContainer = styled.div`
-/* display: flex;
-flex-direction: column; */
-text-align: center;
-width: 27%;
-margin: 15px 10px;
-
-    @media ${device.TabletLandscape} {
-        width: 45%;
-    }
-
-    @media ${device.TabletPortrait} {
-        width: 100%;
-    }
-`;
-
-const ProjectImg = styled.img.attrs({
-    src: pic,
-})`
-width: 100%;
-border-radius: 15px;
-cursor: pointer;
-
-    &:hover {
-        transform: scale(1.1);
-        transition: all ease 0.5s;
-    }
-`;
-
-const ProjectGithub = styled(Github)`
-width: 30px;
-height: 30px;
-margin-right: 10px;
-cursor: pointer;
-
-`;
-
-const ProjectName = styled.span`
-`;
 function ProjectContainer() {
+    const [projects, setProjects] = useState(project_data);
 
+    const clickFilter = (name) => {
+        const new_array = project_data.filter(project => project.category.includes(name));
+        console.log(new_array);
+        setProjects(new_array);
+    }
     return(
+
         <ProjectContainerStyle>
             <ProjectFilterContainer>
-                <FilterBtn value="All">All</FilterBtn>
-                <FilterBtn value="React">React</FilterBtn>
-                <FilterBtn value="VanilaJS">VanilaJS</FilterBtn>
+                <FilterBtn onClick={() => setProjects(project_data)}>All</FilterBtn>
+                <FilterBtn onClick={() => clickFilter('React')}>React</FilterBtn>
+                <FilterBtn onClick={() => clickFilter('VanilaJS')}>VanilaJS</FilterBtn>
             </ProjectFilterContainer>
             <ProjectList>
-                <ListContainer>
-                    <ProjectImg></ProjectImg>
-                    <ProjectGithub></ProjectGithub>
-                    <ProjectName>Project2</ProjectName>
-                </ListContainer>
-                <ListContainer>
-                    <ProjectImg></ProjectImg>
-                    <ProjectGithub></ProjectGithub>
-                    <ProjectName>Project2</ProjectName>
-                </ListContainer>
-                <ListContainer>
-                    <ProjectImg></ProjectImg>
-                    <ProjectGithub></ProjectGithub>
-                    <ProjectName>Project2</ProjectName>
-                </ListContainer>
-                <ListContainer>
-                    <ProjectImg></ProjectImg>
-                    <ProjectGithub></ProjectGithub>
-                    <ProjectName>Project2</ProjectName>
-                </ListContainer>
-                <ListContainer>
-                    <ProjectImg></ProjectImg>
-                    <ProjectGithub></ProjectGithub>
-                    <ProjectName>Project2</ProjectName>
-                </ListContainer>
-                <ListContainer>
-                    <ProjectImg></ProjectImg>
-                    <ProjectGithub></ProjectGithub>
-                    <ProjectName>Project2</ProjectName>
-                </ListContainer>
-                <ListContainer>
-                    <ProjectImg></ProjectImg>
-                    <ProjectGithub></ProjectGithub>
-                    <ProjectName>Project2</ProjectName>
-                </ListContainer>
+                {projects.map((project)=>{
+                    return <ProjectCard key={project.name} project={project}></ProjectCard>
+                })}
             </ProjectList>
         </ProjectContainerStyle>
     );
