@@ -5,9 +5,10 @@ import bguna from '../SideBarPic/bguna.jpg';
 const PicStyle = styled.img.attrs({
     src: bguna,
 })`
-padding-top: 15px;
+margin-top: 50px;
 max-width: 100%;
-border-radius: 70%;
+border-radius: 30%;
+border: 1px solid black;
 height: 20%;
 
     @media(max-width: 992px) {

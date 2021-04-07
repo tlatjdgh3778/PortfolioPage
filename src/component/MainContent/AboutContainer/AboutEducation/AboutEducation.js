@@ -9,7 +9,7 @@ padding: 10px;
     }
 `;
 
-const EducationTitle = styled.div`
+const EducationTitle = styled.h2`
 display: inline-block;
 font-size: 24px;
 border-bottom: 3px solid white;

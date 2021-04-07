@@ -3,15 +3,15 @@ import styled from 'styled-components';
 import NavigationBar from './NavigationBar/NavigationBar';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import AboutContainer from './AboutContainer/AboutContainer';
-import ResumeContainer from './ResumeContainer/ResumeContainer';
 import ProjectContainer from './ProjectContainer/ProjectContainer';
 
 const MainContentStyle = styled.div`
-  color: white;
+  color: black;
   display: flex;
   flex-direction: column;
   align-items: center;
-  border: 1px solid white;
+  border: 2px solid black;
+  background-color: white;
   height: 100%;
   width: 75%;
   border-radius: 30px;

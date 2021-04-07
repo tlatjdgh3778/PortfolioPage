@@ -7,11 +7,12 @@ import SideBarSocialMedia from './SideBarSocialMedia/SideBarSocialMedia';
 import SideBarContact from './SideBarContact/SideBarContact';
 
 const SideBarStyle = styled.div`
-color: white;
+color: black;
   display: flex;
   flex-direction: column;
   align-items: center;
-  border: 1px solid red;
+  border: 2px solid black;
+  background-color: white;
   height: 100%;
   border-radius: 30px;
   width: 20%;

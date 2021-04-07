@@ -4,7 +4,6 @@ import MainContent from '../MainContent/MainContent';
 import SideBar from '../SideBar/SideBer';
 
 const HomeContainerStyle = styled.div`
-border: 2px solid gold;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -17,6 +16,7 @@ border: 2px solid gold;
   }
   @media(max-width: 992px) {
     width: 768px;
+    height: 800px;
     flex-direction: column;
   }
   @media(max-width: 768px) {

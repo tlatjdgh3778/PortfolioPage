@@ -10,7 +10,7 @@ border-bottom: 1px solid white;
         }
 `;
 
-const SkillsTitle = styled.div`
+const SkillsTitle = styled.h2`
 display: inline-block;
 font-size: 24px;
 border-bottom: 3px solid white;

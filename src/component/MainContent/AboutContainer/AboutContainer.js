@@ -9,7 +9,7 @@ const AboutContainerStyle = styled.div`
 display: flex;
 width: 90%;
 height: 100%;
-border: 1px solid blue;
+border-radius: 10px;
 margin: 20px 0;
 
     @media(max-width: 992px) {
@@ -23,7 +23,6 @@ margin: 20px 0;
 const IntroandEdu = styled.div`
 display: flex;
 flex-direction: column;
-border: 1px solid red;
 width: 50%;
 
     @media(max-width: 992px) {
@@ -34,7 +33,6 @@ width: 50%;
 const SkillandExp = styled.div`
 display: flex;
 flex-direction: column;
-border: 1px solid red;
 width: 50%;
 
     @media(max-width: 992px) {

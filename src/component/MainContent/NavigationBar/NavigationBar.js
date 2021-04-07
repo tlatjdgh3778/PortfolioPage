@@ -6,8 +6,8 @@ const NavigationBarStyle = styled.div`
 display: flex;
 justify-content: space-between;
 width: 90%;
-border: 1px solid blue;
 margin: 20px 0;
+
     @media(max-width: 768px) {
             margin: 10px 0;
         } 
@@ -15,9 +15,10 @@ margin: 20px 0;
 
 
 const NavigationBarName = styled.div`
-border: 1px solid green;
 font-size: 40px;
 font-weight: 700;
+padding-bottom: 5px;
+border-bottom: 3px solid black;
 
     @media(max-width: 768px) {
         font-size: 32px;
@@ -28,7 +29,6 @@ const NavigationBarList = styled.div`
 display: flex;
 align-items: center;
 font-size: 24px;
-border: 1px solid green;
 
 @media(max-width: 768px) {
     font-size: 16px;
@@ -36,10 +36,36 @@ border: 1px solid green;
 `;
 
 const AboutBtn = styled.button`
+margin-right: 10px;
+outline: none;
+border: none;
+color: black;
+background-color: inherit;
+font-size: 16px;
+cursor: pointer;
+font-weight: 600;
+padding: 10px;
+border-radius: 10px;
 
+  &:active {
+      background-color: #f2f2f2;
+  }
 `;
 const ProjectsBtn = styled.button`
+margin-right: 10px;
+outline: none;
+border: none;
+color: black;
+background-color: inherit;
+font-size: 16px;
+cursor: pointer;
+font-weight: 600;
+padding: 10px;
+border-radius: 10px;
 
+    &:active {
+        background-color: #f2f2f2;
+    }
 `;
 
 function NavigationBar(){

@@ -4,34 +4,36 @@ import {FacebookCircle, InstagramAlt }  from '@styled-icons/boxicons-logos';
 import { Blog }  from '@styled-icons/fa-solid';
 
 const SocialMediaContainer = styled.div`
-margin: 15px 0;
-border: 1px solid red;
+margin: 30px 0;
 width: 90%;
 display: flex;
 justify-content: space-around;
 align-items: center;
 `;
-const FacebookIcon = styled(FacebookCircle)`
-cursor: pointer;
-width: 30px;
-height: 30px;
-`; 
+
 const InstagramIcon = styled(InstagramAlt)`
 cursor: pointer;
 width: 30px;
 height: 30px;
+
+    &:hover {
+        transform: scale(1.1);
+    }
 `; 
 const BlogIcon = styled(Blog)`
 cursor: pointer;
 width: 30px;
 height: 30px;
+
+    &:hover {
+        transform: scale(1.1);
+    }
 `; 
 
 function SideBarSocialMedia() {
 
     return(
         <SocialMediaContainer>
-            <FacebookIcon />
             <InstagramIcon />
             <BlogIcon />
         </SocialMediaContainer>

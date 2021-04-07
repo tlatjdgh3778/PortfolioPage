@@ -17,7 +17,7 @@ padding: 10px;
     }
 `;
 
-const IntroduceTitle = styled.div`
+const IntroduceTitle = styled.h2`
 display: inline-block;
 font-size: 24px;
 border-bottom: 3px solid white;

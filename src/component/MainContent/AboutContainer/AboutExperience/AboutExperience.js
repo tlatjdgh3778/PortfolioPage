@@ -11,7 +11,7 @@ flex-direction: column; */
     }
 `;
 
-const ExperienceTitle = styled.div`
+const ExperienceTitle = styled.h2`
 display: inline-block;
 font-size: 24px;
 border-bottom: 3px solid white;

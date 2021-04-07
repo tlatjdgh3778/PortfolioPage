@@ -8,10 +8,12 @@ font-weight: 700;
 `;
 
 const ProfileJob = styled.div`
-font-size: 24px;
+font-size: 20px;
 padding: 10px;
-border: 1px solid red;
-@media(max-width: 1200px) {
+border-radius: 10px;
+background-color: #f2f2f2;
+
+    @media(max-width: 1200px) {
         font-size: 18px;
     }
 `;
