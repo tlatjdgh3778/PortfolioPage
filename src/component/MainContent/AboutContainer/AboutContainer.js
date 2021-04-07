@@ -4,6 +4,7 @@ import AboutIntroduce from './AboutIntroduce/AboutIntroduce';
 import AboutEducation from './AboutEducation/AboutEducation';
 import AboutExperience from './AboutExperience/AboutExperience';
 import AboutSkills from './AboutSkills/AboutSkills';
+import { device } from '../../../style/variable';
 
 const AboutContainerStyle = styled.div`
 display: flex;
@@ -12,10 +13,10 @@ height: 100%;
 border-radius: 10px;
 margin: 20px 0;
 
-    @media(max-width: 992px) {
+    @media ${device.TabletLandscape} {
         flex-direction: column;
     }
-    @media(max-width: 768px) {
+    @media ${device.TabletPortrait} {
         margin: 10px 0;
     }
 `;
@@ -25,7 +26,7 @@ display: flex;
 flex-direction: column;
 width: 50%;
 
-    @media(max-width: 992px) {
+    @media ${device.TabletLandscape} {
         width: 100%;
     }
 `;
@@ -34,8 +35,8 @@ const SkillandExp = styled.div`
 display: flex;
 flex-direction: column;
 width: 50%;
-
-    @media(max-width: 992px) {
+ 
+    @media ${device.TabletLandscape} {
         width: 100%;
     }
 `;

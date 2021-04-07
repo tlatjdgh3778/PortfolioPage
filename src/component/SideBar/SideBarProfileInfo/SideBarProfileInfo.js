@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
-import {Github}  from '@styled-icons/boxicons-logos';
+import { Github } from '@styled-icons/boxicons-logos';
+import { device } from '../../../style/variable';
 
 const ProfileInfoContainer = styled.div`
 background-color: #f2f2f2;
@@ -34,14 +35,14 @@ font-size: 24px;
 const ProfileEmail = styled.div`
 margin: 10px 0;
 font-size: 20px;
-    @media(max-width: 1200px) {
+    @media ${device.Laptops} {
         font-size: 18px;
     }
 `;
 
 const ProfilePhone = styled.div`
 margin: 10px 0;
-    @media(max-width: 1200px) {
+    @media ${device.Laptops} {
             font-size: 18px;
         }
 `;

@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import { device } from '../../../style/variable';
 
 const ProfileName = styled.div`
 padding: 10px;
@@ -13,7 +14,7 @@ padding: 10px;
 border-radius: 10px;
 background-color: #f2f2f2;
 
-    @media(max-width: 1200px) {
+    @media ${device.Laptops} {
         font-size: 18px;
     }
 `;
@@ -21,7 +22,7 @@ function SideBarProfileName() {
 
     return(
         <>
-        <ProfileName>성호</ProfileName>
+        <ProfileName>심성호</ProfileName>
         <ProfileJob>Front-end Developer</ProfileJob>
         </>
     );

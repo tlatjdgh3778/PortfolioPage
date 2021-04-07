@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import {Github}  from '@styled-icons/boxicons-logos';
 import pic from '../ProjectContainer/pic.png';
+import { device } from '../../../style/variable';
 
 const ProjectContainerStyle = styled.div`
 width: 90%;
@@ -10,7 +11,7 @@ border-radius: 5px;
 margin: 20px 0;
 overflow-y: scroll;
 
-    @media(max-width: 768px) {
+    @media ${device.TabletPortrait} {
         margin: 10px 0;
     }
 `;
@@ -19,7 +20,7 @@ const ProjectFilterContainer = styled.div`
 padding: 10px;
 `;
 
-const AllFilterBtn = styled.button`
+const FilterBtn = styled.button`
 outline: none;
 border: none;
 color: black;
@@ -29,28 +30,6 @@ cursor: pointer;
 margin-right: 10px;
 font-weight: 600;
 `;
-const ReactFilterBtn = styled.button`
-margin-right: 10px;
-outline: none;
-border: none;
-color: black;
-background-color: inherit;
-font-size: 16px;
-cursor: pointer;
-font-weight: 600;
-`;
-const VanilaJSFilterBtn = styled.button`
-margin-right: 10px;
-outline: none;
-border: none;
-color: black;
-background-color: inherit;
-font-size: 16px;
-cursor: pointer;
-font-weight: 600;
-`;
-
-
 
 const ProjectList = styled.div`
 margin: 10px;
@@ -66,13 +45,13 @@ text-align: center;
 width: 27%;
 margin: 15px 10px;
 
-    @media(max-width: 992px) {
+    @media ${device.TabletLandscape} {
         width: 45%;
     }
 
-    @media(max-width: 768px) {
-         width: 100%;
-  }
+    @media ${device.TabletPortrait} {
+        width: 100%;
+    }
 `;
 
 const ProjectImg = styled.img.attrs({
@@ -85,9 +64,6 @@ cursor: pointer;
     &:hover {
         transform: scale(1.1);
         transition: all ease 0.5s;
-    }
-
-    @media(max-width: 992px) {
     }
 `;
 
@@ -106,9 +82,9 @@ function ProjectContainer() {
     return(
         <ProjectContainerStyle>
             <ProjectFilterContainer>
-                <AllFilterBtn>All</AllFilterBtn>
-                <ReactFilterBtn>React</ReactFilterBtn>
-                <VanilaJSFilterBtn>VanilaJS</VanilaJSFilterBtn>
+                <FilterBtn value="All">All</FilterBtn>
+                <FilterBtn value="React">React</FilterBtn>
+                <FilterBtn value="VanilaJS">VanilaJS</FilterBtn>
             </ProjectFilterContainer>
             <ProjectList>
                 <ListContainer>

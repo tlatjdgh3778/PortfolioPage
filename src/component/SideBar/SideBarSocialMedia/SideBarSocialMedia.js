@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import {FacebookCircle, InstagramAlt }  from '@styled-icons/boxicons-logos';
+import { InstagramAlt }  from '@styled-icons/boxicons-logos';
 import { Blog }  from '@styled-icons/fa-solid';
 
 const SocialMediaContainer = styled.div`

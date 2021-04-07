@@ -1,12 +1,13 @@
 import React from 'react';
 import styled from 'styled-components';
+import { device } from '../../../../style/variable';
 
 const ExperienceContainer = styled.div`
 height: 65%;
 padding: 10px;
 /* display: flex;
 flex-direction: column; */
-    @media(max-width: 992px) {
+    @media ${device.TabletLandscape} {
         height: 100%;
     }
 `;
@@ -19,8 +20,6 @@ border-bottom: 3px solid white;
 
 const ExperienceContent = styled.div`
 padding: 10px;
-    @media(max-width: 992px) {
-    }
 `;
 
 

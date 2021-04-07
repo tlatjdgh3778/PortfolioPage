@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import MainContent from '../MainContent/MainContent';
 import SideBar from '../SideBar/SideBer';
+import { device } from '../../style/variable';
 
 const HomeContainerStyle = styled.div`
   display: flex;
@@ -11,15 +12,15 @@ const HomeContainerStyle = styled.div`
   max-width: 1200px;
   height: 80vh;
   
-  @media(max-width: 1200px) {
+  @media ${device.Laptops} {
     max-width: 992px;
   }
-  @media(max-width: 992px) {
+  @media ${device.TabletLandscape} {
     width: 768px;
     height: 800px;
     flex-direction: column;
   }
-  @media(max-width: 768px) {
+  @media ${device.TabletPortrait} {
     width: 600px;
     flex-direction: column;
   }

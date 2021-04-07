@@ -4,6 +4,7 @@ import NavigationBar from './NavigationBar/NavigationBar';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import AboutContainer from './AboutContainer/AboutContainer';
 import ProjectContainer from './ProjectContainer/ProjectContainer';
+import { device } from '../../style/variable';
 
 const MainContentStyle = styled.div`
   color: black;
@@ -16,7 +17,7 @@ const MainContentStyle = styled.div`
   width: 75%;
   border-radius: 30px;
 
-  @media(max-width: 992px) {
+  @media ${device.TabletLandscape} {
       width: 95%;
       margin: 30px 0;
   }

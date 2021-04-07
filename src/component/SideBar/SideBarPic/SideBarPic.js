@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import bguna from '../SideBarPic/bguna.jpg';
+import { device } from '../../../style/variable';
 
 const PicStyle = styled.img.attrs({
     src: bguna,
@@ -11,7 +12,7 @@ border-radius: 30%;
 border: 1px solid black;
 height: 20%;
 
-    @media(max-width: 992px) {
+    @media ${device.TabletLandscape} {
         height: 30%;
     }
 `;
