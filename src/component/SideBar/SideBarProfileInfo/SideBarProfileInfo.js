@@ -22,6 +22,10 @@ border-radius: 15px;
         background-color: #ffffff;
     }
 `;
+const GithubLink = styled(ProfileGithubContainer.withComponent('a'))`
+color: black;
+text-decoration: none;
+`;
 
 const GithubIcon = styled(Github)`
 width: 40px;
@@ -52,10 +56,10 @@ function SideBarProfileInfo() {
     return(
         <ProfileInfoContainer>
 
-            <ProfileGithubContainer>
+            <GithubLink target="_blank" href="https://github.com/tlatjdgh3778">
                 <GithubIcon/>
                 <GithubSpan>github</GithubSpan>
-            </ProfileGithubContainer>
+            </GithubLink>
             <ProfileEmail>tjdgh3778@gmail.com</ProfileEmail>
             <ProfilePhone>+82 10 4508 3778</ProfilePhone>
         </ProfileInfoContainer>

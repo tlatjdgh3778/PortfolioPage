@@ -19,7 +19,12 @@ height: 30px;
     &:hover {
         transform: scale(1.1);
     }
-`; 
+`;
+
+const InstagramLink = styled(InstagramIcon.withComponent('a'))`
+color: black;
+`;
+
 const BlogIcon = styled(Blog)`
 cursor: pointer;
 width: 30px;
@@ -30,12 +35,20 @@ height: 30px;
     }
 `; 
 
+const BlogLink = styled(BlogIcon.withComponent('a'))`
+color: black;
+`;
+
 function SideBarSocialMedia() {
 
     return(
         <SocialMediaContainer>
-            <InstagramIcon />
-            <BlogIcon />
+            <InstagramLink target="_blank" href="https://www.instagram.com/seongho.shim/">
+                <InstagramIcon />
+            </InstagramLink>
+            <BlogLink target="_blank" href="https://velog.io/@tlatjdgh3778">
+                <BlogIcon />
+            </BlogLink>
         </SocialMediaContainer>
     );
 }

@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 const SideBarEmailContact = styled.button`
 width: 80%;
-margin: 20px 0;
+margin: 10px 0;
 padding: 10px;
 text-align: center;
 font-size: 32px;
@@ -12,11 +12,14 @@ border: none;
 border-radius: 10px;
 cursor: pointer;
 `;
+const SendEmail = (e) => {
+    e.preventDefault();
+    window.open('mailto:tjdgh3778@gmail.com')};
 
 function SideBarContact() {
 
     return(
-        <SideBarEmailContact>Contact</SideBarEmailContact>
+        <SideBarEmailContact onClick={SendEmail}>Contact</SideBarEmailContact>
     );
 };
 
