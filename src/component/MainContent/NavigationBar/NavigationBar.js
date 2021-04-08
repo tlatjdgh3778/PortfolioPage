@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
 import { NavLink } from 'react-router-dom';
-import { device } from '../../../style/variable';
 
 const NavigationBarStyle = styled.div`
 display: flex;
@@ -9,7 +8,7 @@ justify-content: space-between;
 width: 90%;
 margin: 20px 0;
 
-    @media ${device.TabletPortrait} {
+    @media ${({ theme }) => theme.device.TabletPortrait} {
             margin: 10px 0;
     } 
 `;
@@ -19,29 +18,29 @@ const NavigationBarName = styled.div`
 font-size: 40px;
 font-weight: 700;
 padding-bottom: 5px;
-border-bottom: 3px solid black;
+border-bottom: 3px solid ${({ theme }) => theme.color.black};
 
-    @media ${device.TabletPortrait} {
-        font-size: 32px;
+    @media ${({ theme }) => theme.device.TabletPortrait} {
+        font-size: ${({ theme }) => theme.fontSize.xxl};
     } 
 `;
 
 const NavigationBarList = styled.div`
 display: flex;
 align-items: center;
-font-size: 24px;
+font-size: ${({ theme }) => theme.fontSize.lg};
 
-    @media ${device.TabletPortrait} {
-        font-size: 16px;
+    @media ${({ theme }) => theme.device.TabletPortrait} {
+        font-size: ${({ theme }) => theme.fontSize.sm};
     }
 `;
 const Btn = styled.button`
 margin-right: 10px;
 outline: none;
 border: none;
-color: black;
+color: ${({ theme }) => theme.color.black};
 background-color: inherit;
-font-size: 16px;
+font-size: ${({ theme }) => theme.fontSize.lg};
 cursor: pointer;
 font-weight: 600;
 padding: 10px;

@@ -1,19 +1,17 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
 import {Github}  from '@styled-icons/boxicons-logos';
-import { device } from '../../../style/variable';
-
 
 const ListContainer = styled.div`
 text-align: center;
 width: 30%;
 margin: 15px 10px;
 
-    @media ${device.TabletLandscape} {
+    @media ${({ theme }) => theme.device.TabletLandscape} {
         width: 45%;
     }
 
-    @media ${device.TabletPortrait} {
+    @media ${({ theme }) => theme.device.TabletPortrait} {
         width: 100%;
     }
 `;
@@ -41,7 +39,7 @@ cursor: pointer;
 `;
 
 const ProjectGithubLink = styled(ProjectGithub.withComponent('a'))`
-color: black;
+color: ${({ theme }) => theme.color.black};
 `;
 
 const ProjectName = styled.span`

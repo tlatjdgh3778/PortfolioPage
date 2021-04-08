@@ -5,20 +5,19 @@ import SideBarProfileName from './SideBarProfileName/SideBarProfileName';
 import SideBarProfileInfo from './SideBarProfileInfo/SideBarProfileInfo';
 import SideBarSocialMedia from './SideBarSocialMedia/SideBarSocialMedia';
 import SideBarContact from './SideBarContact/SideBarContact';
-import { device } from '../../style/variable';
 
 const SideBarStyle = styled.div`
-color: black;
+color: ${({ theme }) => theme.color.black};
 display: flex;
 flex-direction: column;
 align-items: center;
 border: 2px solid black;
-background-color: white;
+background-color: ${({ theme }) => theme.color.white};
 height: 100%;
 border-radius: 30px;
 width: 20%;
 
-    @media ${device.TabletLandscape} {
+    @media ${({ theme }) => theme.device.TabletLandscape} {
         width: 95%;
         height: auto;
     }

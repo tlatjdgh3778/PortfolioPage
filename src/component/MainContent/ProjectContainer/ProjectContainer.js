@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
 import {Github}  from '@styled-icons/boxicons-logos';
-import { device } from '../../../style/variable';
 import project_data from '../../data_folder/project_data';
 import ProjectCard from './ProjectCard';
 
@@ -12,7 +11,7 @@ border-radius: 5px;
 margin: 20px 0;
 overflow-y: scroll;
 
-    @media ${device.TabletPortrait} {
+    @media ${({ theme }) => theme.device.TabletPortrait} {
         margin: 10px 0;
     }
 `;
@@ -24,9 +23,9 @@ padding: 10px;
 const FilterBtn = styled.button`
 outline: none;
 border: none;
-color: black;
+color: ${({ theme }) => theme.color.black};
 background-color: inherit;
-font-size: 16px;
+font-size: ${({ theme }) => theme.fontSize.md};
 cursor: pointer;
 margin-right: 10px;
 font-weight: 600;

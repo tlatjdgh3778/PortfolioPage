@@ -1,26 +1,26 @@
 import React from 'react';
 import styled from 'styled-components';
-import { device } from '../../../../style/variable';
 
 const EducationContainer = styled.div`
 height: 65%;
 padding: 10px;
-    @media ${device.TabletLandscape} {
+    @media ${({ theme }) => theme.device.TabletLandscape} {
         height: 100%;
     }
 `;
 
 const EducationTitle = styled.h2`
 display: inline-block;
-font-size: 24px;
+font-size: ${({ theme }) => theme.fontSize.lg};
 margin-bottom: 10px;
 `;
 
 const EducationName = styled.div`
-font-size: 20px;
+font-size: ${({ theme }) => theme.fontSize.md};
 font-weight: 700;
 margin-bottom: 10px;
 `;
+
 const EducationContent = styled.div`
 padding: 5px;
 `;

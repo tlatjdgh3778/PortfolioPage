@@ -6,7 +6,7 @@ width: 80%;
 margin: 10px 0;
 padding: 10px;
 text-align: center;
-font-size: 32px;
+font-size: ${({ theme }) => theme.fontSize.xxl};
 outline: none;
 border: none;
 border-radius: 10px;

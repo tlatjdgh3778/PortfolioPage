@@ -4,23 +4,22 @@ import NavigationBar from './NavigationBar/NavigationBar';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import AboutContainer from './AboutContainer/AboutContainer';
 import ProjectContainer from './ProjectContainer/ProjectContainer';
-import { device } from '../../style/variable';
 
 const MainContentStyle = styled.div`
-  color: black;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  border: 2px solid black;
-  background-color: white;
-  height: 100%;
-  width: 75%;
-  border-radius: 30px;
+color: ${({ theme }) => theme.color.black};
+display: flex;
+flex-direction: column;
+align-items: center;
+border: 2px solid ${({ theme }) => theme.color.black};
+background-color: ${({ theme }) => theme.color.white};
+height: 100%;
+width: 75%;
+border-radius: 30px;
 
-  @media ${device.TabletLandscape} {
-      width: 95%;
-      margin: 30px 0;
-  }
+    @media ${({ theme }) => theme.device.TabletLandscape} {
+        width: 95%;
+        margin: 30px 0;
+    }
 `;
 
 function MainContent(){

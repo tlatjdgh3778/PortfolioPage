@@ -4,7 +4,7 @@ import AboutIntroduce from './AboutIntroduce/AboutIntroduce';
 import AboutEducation from './AboutEducation/AboutEducation';
 import AboutExperience from './AboutExperience/AboutExperience';
 import AboutSkills from './AboutSkills/AboutSkills';
-import { device } from '../../../style/variable';
+
 
 const AboutContainerStyle = styled.div`
 display: flex;
@@ -13,10 +13,10 @@ height: 100%;
 border-radius: 10px;
 margin: 20px 0;
 
-    @media ${device.TabletLandscape} {
+    @media ${({ theme }) => theme.device.TabletLandscape} {
         flex-direction: column;
     }
-    @media ${device.TabletPortrait} {
+    @media ${({ theme }) => theme.device.TabletPortrait} {
         margin: 10px 0;
     }
 `;
@@ -26,7 +26,7 @@ display: flex;
 flex-direction: column;
 width: 50%;
 
-    @media ${device.TabletLandscape} {
+    @media ${({ theme }) => theme.device.TabletLandscape} {
         width: 100%;
     }
 `;
@@ -36,7 +36,7 @@ display: flex;
 flex-direction: column;
 width: 50%;
  
-    @media ${device.TabletLandscape} {
+    @media ${({ theme }) => theme.device.TabletLandscape} {
         width: 100%;
     }
 `;

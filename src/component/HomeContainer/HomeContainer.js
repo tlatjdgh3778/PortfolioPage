@@ -2,7 +2,6 @@ import React from 'react';
 import styled from 'styled-components';
 import MainContent from '../MainContent/MainContent';
 import SideBar from '../SideBar/SideBer';
-import { device } from '../../style/variable';
 
 const HomeContainerStyle = styled.div`
   display: flex;
@@ -12,20 +11,19 @@ const HomeContainerStyle = styled.div`
   max-width: 1200px;
   height: 80vh;
   
-  @media ${device.Laptops} {
+  @media ${({ theme }) => theme.device.Laptops} {
     max-width: 992px;
   }
-  @media ${device.TabletLandscape} {
+  @media ${({ theme }) => theme.device.TabletLandscape} {
     width: 768px;
     height: 800px;
     flex-direction: column;
   }
-  @media ${device.TabletPortrait} {
+  @media ${({ theme }) => theme.device.TabletPortrait} {
     width: 600px;
     flex-direction: column;
   }
 `;
-
 
 function HomeContainer() {
 
