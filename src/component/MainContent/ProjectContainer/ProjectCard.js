@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
 import {Github}  from '@styled-icons/boxicons-logos';
-import movieapp from '../ProjectContainer/movie-app.png';
 import { device } from '../../../style/variable';
 
 
@@ -22,13 +21,13 @@ margin: 15px 10px;
 const ProjectImg = styled.img.attrs({
     alt: "project_img"
 })`
-
+height: 100%;
 width: 100%;
 border-radius: 15px;
 cursor: pointer;
 
     &:hover {
-        transform: scale(1.1);
+        transform: scale(1.05);
         transition: all ease 0.5s;
     }
 `;

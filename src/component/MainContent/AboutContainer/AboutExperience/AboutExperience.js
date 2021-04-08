@@ -15,7 +15,7 @@ flex-direction: column; */
 const ExperienceTitle = styled.h2`
 display: inline-block;
 font-size: 24px;
-border-bottom: 3px solid white;
+margin-bottom: 10px;
 `;
 
 const ExperienceContent = styled.div`
@@ -28,7 +28,7 @@ function AboutExperience() {
     return(
         <ExperienceContainer>
             <ExperienceTitle>Experience</ExperienceTitle>
-            <ExperienceContent>asd</ExperienceContent>
+            <ExperienceContent>🤣</ExperienceContent>
         </ExperienceContainer>
     );
 }

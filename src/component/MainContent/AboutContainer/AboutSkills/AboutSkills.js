@@ -14,7 +14,7 @@ border-bottom: 1px solid white;
 const SkillsTitle = styled.h2`
 display: inline-block;
 font-size: 24px;
-border-bottom: 3px solid white;
+margin-bottom: 10px;
 `;
 
 const SkillsContent = styled.div`
@@ -28,13 +28,13 @@ function AboutSkills() {
         <SkillsContainer>
             <SkillsTitle>Skills</SkillsTitle>
             <SkillsContent>
-                frontend : React, JS, CSS, HTML
+                💻 Frontend : React, JS, CSS/HTML
             </SkillsContent>
             <SkillsContent>
-                dev-ops: github, vscode 
+                ⌨ Dev Tools: github, vscode 
             </SkillsContent>
             <SkillsContent>
-                etc : styled-component
+                🎨 Etc : styled-component
             </SkillsContent>
         </SkillsContainer>
     );

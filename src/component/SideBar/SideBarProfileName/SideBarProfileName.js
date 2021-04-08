@@ -23,7 +23,7 @@ function SideBarProfileName() {
     return(
         <>
         <ProfileName>심성호</ProfileName>
-        <ProfileJob>Front-end Developer</ProfileJob>
+        <ProfileJob>Frontend Developer</ProfileJob>
         </>
     );
 }
