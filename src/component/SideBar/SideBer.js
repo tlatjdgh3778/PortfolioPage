@@ -16,6 +16,7 @@ background-color: ${(props) => props.theme.color.bgColor};
 height: 100%;
 border-radius: 30px;
 width: 20%;
+box-shadow: 0 0 10px ${(props) => props.theme.color.highlightColor};
 
     @media ${(props) => props.theme.device.TabletLandscape} {
         width: 95%;
