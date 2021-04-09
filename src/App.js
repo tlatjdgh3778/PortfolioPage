@@ -12,11 +12,12 @@ function App() {
   const changeTheme = () => {
     setIsDark(!isDark);
   }
+
   return (
     <>
       <ThemeProvider theme={isDark? theme.darkMode : theme.lightMode}>
+      <GlobalStyle />
         <div className="App">
-          <GlobalStyle />
           <ChangeMode changeTheme={changeTheme} isDark={isDark}></ChangeMode>
           <HomeContainer></HomeContainer>
         </div>

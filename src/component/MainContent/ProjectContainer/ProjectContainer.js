@@ -11,6 +11,18 @@ border-radius: 5px;
 margin: 20px 0;
 overflow-y: scroll;
 
+    &::-webkit-scrollbar {
+        width: 8px;
+    }
+    &::-webkit-scrollbar-thumb {
+        background-color:${(props) => props.theme.color.highlightColor};
+        border-radius: 10px;
+    }
+    &::webkit-scrollbar-track {
+        background-color: ${(props) => props.theme.color.hoverColor};
+        border-radius: 10px;
+    }
+
     @media ${(props) => props.theme.device.TabletPortrait} {
         margin: 10px 0;
     }
