@@ -23,7 +23,7 @@ padding: 10px;
 const FilterBtn = styled.button`
 outline: none;
 border: none;
-color: ${({ theme }) => theme.color.black};
+color: ${(props) => props.theme.color.fontColor};
 background-color: inherit;
 font-size: ${({ theme }) => theme.fontSize.md};
 cursor: pointer;

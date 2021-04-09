@@ -18,7 +18,7 @@ const NavigationBarName = styled.div`
 font-size: 40px;
 font-weight: 700;
 padding-bottom: 5px;
-border-bottom: 3px solid ${({ theme }) => theme.color.black};
+border-bottom: 3px solid ${(props) => props.theme.color.fontColor};
 
     @media ${({ theme }) => theme.device.TabletPortrait} {
         font-size: ${({ theme }) => theme.fontSize.xxl};
@@ -38,7 +38,7 @@ const Btn = styled.button`
 margin-right: 10px;
 outline: none;
 border: none;
-color: ${({ theme }) => theme.color.black};
+color: ${(props) => props.theme.color.fontColor};
 background-color: inherit;
 font-size: ${({ theme }) => theme.fontSize.lg};
 cursor: pointer;
@@ -47,7 +47,7 @@ padding: 10px;
 border-radius: 10px;
 
     &:active {
-        background-color: #f2f2f2;
+        background-color: ${(props) => props.theme.color.highlightColor};
     }
 `;
 

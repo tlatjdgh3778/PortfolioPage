@@ -22,7 +22,7 @@ height: 30px;
 `;
 
 const InstagramLink = styled(InstagramIcon.withComponent('a'))`
-color: ${({ theme }) => theme.color.black};
+color: ${(props) => props.theme.color.fontColor};
 `;
 
 const BlogIcon = styled(Blog)`
@@ -36,7 +36,7 @@ height: 30px;
 `; 
 
 const BlogLink = styled(BlogIcon.withComponent('a'))`
-color: ${({ theme }) => theme.color.black};
+color: ${(props) => props.theme.color.fontColor};
 `;
 
 function SideBarSocialMedia() {

@@ -11,7 +11,7 @@ const ProfileJob = styled.div`
 font-size: ${({ theme }) => theme.fontSize.md};
 padding: 10px;
 border-radius: 10px;
-background-color: ${({ theme }) => theme.color.highlight};
+background-color: ${(props) => props.theme.color.highlightColor};
 
     @media ${({ theme }) => theme.device.Laptops} {
         font-size: ${({ theme }) => theme.fontSize.sm};

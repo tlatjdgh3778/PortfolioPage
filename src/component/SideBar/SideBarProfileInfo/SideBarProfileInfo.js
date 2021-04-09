@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import { Github } from '@styled-icons/boxicons-logos';
 
 const ProfileInfoContainer = styled.div`
-background-color: #f2f2f2;
+background-color: ${(props) => props.theme.color.highlightColor};
 margin-top: 50px;
 width: 100%;
 text-align: center;
@@ -18,11 +18,11 @@ align-items: center;
 border-radius: 15px;
 
     &:hover {
-        background-color: #ffffff;
+        background-color: ${(props) => props.theme.color.hoverColor};
     }
 `;
 const GithubLink = styled(ProfileGithubContainer.withComponent('a'))`
-color: ${({ theme }) => theme.color.black};
+color: ${(props) => props.theme.color.fontColor};
 text-decoration: none;
 `;
 

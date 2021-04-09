@@ -4,7 +4,6 @@ import styled from 'styled-components';
 const IntroduceContainer = styled.div`
 height: 35%;
 padding: 10px;
-border-bottom: 1px solid white;
 @media ${({ theme }) => theme.device.TabletLandscape} {
         height: 100%;
     }

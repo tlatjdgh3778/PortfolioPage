@@ -21,17 +21,40 @@ const fontSize = {
     xl: '28px',
     xxl: '32px', 
 }
-
-const color = {
-    white: 'white',
-    black: 'black',
-    highlight: '#f2f2f2',
+const lightMode = {
+    color: {
+        wallpaperColor: '#ffffff',
+        bgColor: '#f8f5fa',
+        fontColor: '#373737',
+        highlightColor: '#c2b7da',
+        hoverColor: '#f5f5f5',
+    },
+    fontSize,
+    device,
+}
+const darkMode = {
+    color: {
+        wallpaperColor: '#120b21',
+        bgColor: '#180f2d',
+        fontColor: '#c2b7da',
+        highlightColor: '#2c1952',
+        hoverColor: '#bb86fc',
+    },
+    fontSize,
+    device,
 }
 
+// const color = {
+//     white: 'white',
+//     black: 'black',
+//     highlight: '#f2f2f2',
+//     rightBgColor: '#ece9e6',
+// }
+
 const theme = {
-    device,
-    fontSize,
-    color,
+    // color,
+    lightMode,
+    darkMode,
 }
 
 

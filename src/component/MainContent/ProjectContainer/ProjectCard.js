@@ -39,7 +39,7 @@ cursor: pointer;
 `;
 
 const ProjectGithubLink = styled(ProjectGithub.withComponent('a'))`
-color: ${({ theme }) => theme.color.black};
+color: ${(props) => props.theme.color.fontColor};
 `;
 
 const ProjectName = styled.span`

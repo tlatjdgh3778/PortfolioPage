@@ -6,12 +6,12 @@ import AboutContainer from './AboutContainer/AboutContainer';
 import ProjectContainer from './ProjectContainer/ProjectContainer';
 
 const MainContentStyle = styled.div`
-color: ${({ theme }) => theme.color.black};
+color: ${(props) => props.theme.color.fontColor};
 display: flex;
 flex-direction: column;
 align-items: center;
-border: 2px solid ${({ theme }) => theme.color.black};
-background-color: ${({ theme }) => theme.color.white};
+border: 2px solid ${(props) => props.theme.color.fontColor};
+background-color: ${(props) => props.theme.color.bgColor};
 height: 100%;
 width: 75%;
 border-radius: 30px;

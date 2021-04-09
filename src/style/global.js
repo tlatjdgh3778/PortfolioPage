@@ -13,8 +13,7 @@ const GlobalStyle = createGlobalStyle`
 
 body {
   box-sizing: border-box;
-  background-image: linear-gradient(to right bottom, #ece9e6, #ffffff);
-  background-attachment: fixed;
+  background-color: ${(props) => props.theme.color.wallpaperColor};
 }
 
 `;

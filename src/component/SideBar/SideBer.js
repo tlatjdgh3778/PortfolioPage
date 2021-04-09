@@ -7,12 +7,12 @@ import SideBarSocialMedia from './SideBarSocialMedia/SideBarSocialMedia';
 import SideBarContact from './SideBarContact/SideBarContact';
 
 const SideBarStyle = styled.div`
-color: ${({ theme }) => theme.color.black};
+color: ${(props) => props.theme.color.fontColor};
 display: flex;
 flex-direction: column;
 align-items: center;
-border: 2px solid black;
-background-color: ${({ theme }) => theme.color.white};
+border: 2px solid ${(props) => props.theme.color.fontColor};
+background-color: ${(props) => props.theme.color.bgColor};
 height: 100%;
 border-radius: 30px;
 width: 20%;
