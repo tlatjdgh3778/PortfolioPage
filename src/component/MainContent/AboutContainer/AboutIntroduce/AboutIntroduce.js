@@ -4,7 +4,7 @@ import styled from 'styled-components';
 const IntroduceContainer = styled.div`
 height: 35%;
 padding: 10px;
-@media ${({ theme }) => theme.device.TabletLandscape} {
+@media ${(props) => props.theme.device.TabletLandscape} {
         height: 100%;
     }
 `;
@@ -15,7 +15,7 @@ padding: 10px;
 
 const IntroduceTitle = styled.h2`
 display: inline-block;
-font-size: ${({ theme }) => theme.fontSize.lg};
+font-size: ${(props) => props.theme.fontSize.lg};
 margin-bottom: 10px;
 `;
 

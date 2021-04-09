@@ -11,15 +11,15 @@ const HomeContainerStyle = styled.div`
   max-width: 1200px;
   height: 80vh;
   
-  @media ${({ theme }) => theme.device.Laptops} {
+  @media ${(props) => props.theme.device.Laptops} {
     max-width: 992px;
   }
-  @media ${({ theme }) => theme.device.TabletLandscape} {
+  @media ${(props) => props.theme.device.TabletLandscape} {
     width: 768px;
     height: 800px;
     flex-direction: column;
   }
-  @media ${({ theme }) => theme.device.TabletPortrait} {
+  @media ${(props) => props.theme.device.TabletPortrait} {
     width: 600px;
     flex-direction: column;
   }

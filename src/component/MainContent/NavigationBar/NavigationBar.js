@@ -8,7 +8,7 @@ justify-content: space-between;
 width: 90%;
 margin: 20px 0;
 
-    @media ${({ theme }) => theme.device.TabletPortrait} {
+    @media ${(props) => props.theme.device.TabletPortrait} {
             margin: 10px 0;
     } 
 `;
@@ -20,18 +20,18 @@ font-weight: 700;
 padding-bottom: 5px;
 border-bottom: 3px solid ${(props) => props.theme.color.fontColor};
 
-    @media ${({ theme }) => theme.device.TabletPortrait} {
-        font-size: ${({ theme }) => theme.fontSize.xxl};
+    @media ${(props) => props.theme.device.TabletPortrait} {
+        font-size: ${(props) => props.theme.fontSize.xxl};
     } 
 `;
 
 const NavigationBarList = styled.div`
 display: flex;
 align-items: center;
-font-size: ${({ theme }) => theme.fontSize.lg};
+font-size: ${(props) => props.theme.fontSize.lg};
 
-    @media ${({ theme }) => theme.device.TabletPortrait} {
-        font-size: ${({ theme }) => theme.fontSize.sm};
+    @media ${(props) => props.theme.device.TabletPortrait} {
+        font-size: ${(props) => props.theme.fontSize.sm};
     }
 `;
 const Btn = styled.button`
@@ -40,7 +40,7 @@ outline: none;
 border: none;
 color: ${(props) => props.theme.color.fontColor};
 background-color: inherit;
-font-size: ${({ theme }) => theme.fontSize.lg};
+font-size: ${(props) => props.theme.fontSize.lg};
 cursor: pointer;
 font-weight: 600;
 padding: 10px;

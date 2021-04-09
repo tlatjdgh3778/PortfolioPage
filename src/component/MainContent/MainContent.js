@@ -16,7 +16,7 @@ height: 100%;
 width: 75%;
 border-radius: 30px;
 
-    @media ${({ theme }) => theme.device.TabletLandscape} {
+    @media ${(props) => props.theme.device.TabletLandscape} {
         width: 95%;
         margin: 30px 0;
     }

@@ -11,7 +11,7 @@ border-radius: 30%;
 border: 1px solid ${(props) => props.theme.color.fontColor};
 height: 20%;
 
-    @media ${({ theme }) => theme.device.TabletLandscape} {
+    @media ${(props) => props.theme.device.TabletLandscape} {
         height: 30%;
     }
 `;

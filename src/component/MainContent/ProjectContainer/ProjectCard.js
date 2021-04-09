@@ -7,11 +7,11 @@ text-align: center;
 width: 30%;
 margin: 15px 10px;
 
-    @media ${({ theme }) => theme.device.TabletLandscape} {
+    @media ${(props) => props.theme.device.TabletLandscape} {
         width: 45%;
     }
 
-    @media ${({ theme }) => theme.device.TabletPortrait} {
+    @media ${(props) => props.theme.device.TabletPortrait} {
         width: 100%;
     }
 `;
@@ -23,6 +23,7 @@ height: 100%;
 width: 100%;
 border-radius: 15px;
 cursor: pointer;
+border: 2px solid ${(props) => props.theme.color.fontColor};
 
     &:hover {
         transform: scale(1.05);
@@ -30,6 +31,7 @@ cursor: pointer;
     }
 `;
 const ProjectLink = styled(ProjectImg.withComponent('a'))`
+border: none;
 `;
 
 const ProjectGithub = styled(Github)`

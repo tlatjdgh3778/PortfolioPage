@@ -13,10 +13,10 @@ height: 100%;
 border-radius: 10px;
 margin: 20px 0;
 
-    @media ${({ theme }) => theme.device.TabletLandscape} {
+    @media ${(props) => props.theme.device.TabletLandscape} {
         flex-direction: column;
     }
-    @media ${({ theme }) => theme.device.TabletPortrait} {
+    @media ${(props) => props.theme.device.TabletPortrait} {
         margin: 10px 0;
     }
 `;
@@ -26,7 +26,7 @@ display: flex;
 flex-direction: column;
 width: 50%;
 
-    @media ${({ theme }) => theme.device.TabletLandscape} {
+    @media ${(props) => props.theme.device.TabletLandscape} {
         width: 100%;
     }
 `;
@@ -36,7 +36,7 @@ display: flex;
 flex-direction: column;
 width: 50%;
  
-    @media ${({ theme }) => theme.device.TabletLandscape} {
+    @media ${(props) => props.theme.device.TabletLandscape} {
         width: 100%;
     }
 `;

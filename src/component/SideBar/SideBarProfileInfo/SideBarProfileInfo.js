@@ -32,21 +32,21 @@ height: 40px;
 `;
 
 const GithubSpan = styled.span`
-font-size: ${({ theme }) => theme.fontSize.lg};
+font-size: ${(props) => props.theme.fontSize.lg};
 `;
 
 const ProfileEmail = styled.div`
 margin: 10px 0;
-font-size: ${({ theme }) => theme.fontSize.md};
-    @media ${({ theme }) => theme.device.Laptops} {
-        font-size: ${({ theme }) => theme.fontSize.sm};
+font-size: ${(props) => props.theme.fontSize.md};
+    @media ${(props) => props.theme.device.Laptops} {
+        font-size: ${(props) => props.theme.fontSize.sm};
     }
 `;
 
 const ProfilePhone = styled.div`
 margin: 10px 0;
-    @media ${({ theme }) => theme.device.Laptops} {
-            font-size: ${({ theme }) => theme.fontSize.sm};
+    @media ${(props) => props.theme.device.Laptops} {
+            font-size: ${(props) => props.theme.fontSize.sm};
         }
 `;
 

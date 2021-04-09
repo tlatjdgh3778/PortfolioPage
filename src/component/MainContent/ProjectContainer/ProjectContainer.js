@@ -11,7 +11,7 @@ border-radius: 5px;
 margin: 20px 0;
 overflow-y: scroll;
 
-    @media ${({ theme }) => theme.device.TabletPortrait} {
+    @media ${(props) => props.theme.device.TabletPortrait} {
         margin: 10px 0;
     }
 `;
@@ -25,10 +25,17 @@ outline: none;
 border: none;
 color: ${(props) => props.theme.color.fontColor};
 background-color: inherit;
-font-size: ${({ theme }) => theme.fontSize.md};
+font-size: ${(props) => props.theme.fontSize.md};
 cursor: pointer;
 margin-right: 10px;
 font-weight: 600;
+padding: 5px;
+border-radius: 5px;
+
+    &:active,
+    &:hover {
+        background-color: ${(props) => props.theme.color.highlightColor};
+    }
 `;
 
 const ProjectList = styled.div`
@@ -39,25 +46,29 @@ flex-wrap: wrap;
 
 function ProjectContainer() {
     const [projects, setProjects] = useState(project_data);
+    const [button, setButton] = useState('All');
 
     const clickFilter = (name) => {
         const new_array = project_data.filter(project => project.category.includes(name));
-        console.log(new_array);
         setProjects(new_array);
+        setButton(name);
     }
     return(
 
         <ProjectContainerStyle>
             <ProjectFilterContainer>
-                <FilterBtn onClick={() => setProjects(project_data)}>All</FilterBtn>
-                <FilterBtn onClick={() => clickFilter('React')}>React</FilterBtn>
-                <FilterBtn onClick={() => clickFilter('VanilaJS')}>VanilaJS</FilterBtn>
+                <FilterBtn 
+                onClick={() => {setProjects(project_data); setButton('All');}}>All</FilterBtn>
+                <FilterBtn 
+                onClick={() => clickFilter('React')}>React</FilterBtn>
+                <FilterBtn 
+                onClick={() => clickFilter('VanilaJS')}>VanilaJS</FilterBtn>
             </ProjectFilterContainer>
-            <ProjectList>
-                {projects.map((project)=>{
-                    return <ProjectCard key={project.name} project={project}></ProjectCard>
-                })}
-            </ProjectList>
+                <ProjectList>
+                    {projects.map((project)=>{
+                        return <ProjectCard key={project.name} project={project}></ProjectCard>
+                    })}
+                </ProjectList>
         </ProjectContainerStyle>
     );
 }

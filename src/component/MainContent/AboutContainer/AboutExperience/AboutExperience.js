@@ -6,14 +6,14 @@ height: 65%;
 padding: 10px;
 /* display: flex;
 flex-direction: column; */
-    @media ${({ theme }) => theme.device.TabletLandscape} {
+    @media ${(props) => props.theme.device.TabletLandscape} {
         height: 100%;
     }
 `;
 
 const ExperienceTitle = styled.h2`
 display: inline-block;
-font-size: ${({ theme }) => theme.fontSize.lg};
+font-size: ${(props) => props.theme.fontSize.lg};
 margin-bottom: 10px;
 `;
 

@@ -5,14 +5,14 @@ const SkillsContainer = styled.div`
 height: 35%;
 padding: 10px;
 
-    @media ${({ theme }) => theme.device.TabletLandscape} {
+    @media ${(props) => props.theme.device.TabletLandscape} {
         height: 100%;
     }
 `;
 
 const SkillsTitle = styled.h2`
 display: inline-block;
-font-size: ${({ theme }) => theme.fontSize.lg};
+font-size: ${(props) => props.theme.fontSize.lg};
 margin-bottom: 10px;
 `;
 
