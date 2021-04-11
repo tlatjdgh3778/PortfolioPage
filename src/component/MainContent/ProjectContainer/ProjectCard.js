@@ -6,6 +6,7 @@ const ListContainer = styled.div`
 text-align: center;
 width: 30%;
 margin: 15px 10px;
+padding: 5px 0;
 
     @media ${(props) => props.theme.device.TabletLandscape} {
         width: 45%;

@@ -2,8 +2,8 @@ import React from 'react';
 import styled from 'styled-components';
 
 const SkillsContainer = styled.div`
-height: 35%;
-padding: 10px;
+height: 50%;
+padding: 5px;
 
     @media ${(props) => props.theme.device.TabletLandscape} {
         height: 100%;
@@ -13,11 +13,11 @@ padding: 10px;
 const SkillsTitle = styled.h2`
 display: inline-block;
 font-size: ${(props) => props.theme.fontSize.lg};
-margin-bottom: 10px;
+padding-bottom: 10px;
 `;
 
 const SkillsContent = styled.div`
-padding: 10px;
+padding: 0 10px 10px;
 `;
 
 
@@ -27,7 +27,7 @@ function AboutSkills() {
         <SkillsContainer>
             <SkillsTitle>Skills</SkillsTitle>
             <SkillsContent>
-                💻 Frontend : React, JS, CSS/HTML
+                💻 Frontend : React, JavaScript, CSS/HTML
             </SkillsContent>
             <SkillsContent>
                 ⌨ Dev Tools: github, vscode 

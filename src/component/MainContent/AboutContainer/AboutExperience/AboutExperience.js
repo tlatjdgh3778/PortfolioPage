@@ -2,8 +2,8 @@ import React from 'react';
 import styled from 'styled-components';
 
 const ExperienceContainer = styled.div`
-height: 65%;
-padding: 10px;
+height: 50%;
+padding: 5px;
 /* display: flex;
 flex-direction: column; */
     @media ${(props) => props.theme.device.TabletLandscape} {
@@ -14,11 +14,11 @@ flex-direction: column; */
 const ExperienceTitle = styled.h2`
 display: inline-block;
 font-size: ${(props) => props.theme.fontSize.lg};
-margin-bottom: 10px;
+padding-bottom: 10px;
 `;
 
 const ExperienceContent = styled.div`
-padding: 10px;
+padding: 0 10px;
 `;
 
 
