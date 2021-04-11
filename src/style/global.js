@@ -10,6 +10,19 @@ const GlobalStyle = createGlobalStyle`
   font-family: 'Noto Sans KR', "Roboto", sans-serif;
   margin: 0;
   padding: 0;
+
+  
+  &::-webkit-scrollbar {
+        width: 8px;
+    }
+  &::-webkit-scrollbar-thumb {
+      background-color:${(props) => props.theme.color.highlightColor};
+      border-radius: 10px;
+  }
+  &::webkit-scrollbar-track {
+      background-color: ${(props) => props.theme.color.hoverColor};
+      border-radius: 10px;
+    }
 }
 
 body {
