@@ -11,18 +11,9 @@ border-radius: 5px;
 margin: 20px 0;
 overflow-y: scroll;
 
-    &::-webkit-scrollbar {
-        width: 8px;
+    @media ${(props) => props.theme.device.TabletLandscape} {
+        height: 80vh;
     }
-    &::-webkit-scrollbar-thumb {
-        background-color:${(props) => props.theme.color.highlightColor};
-        border-radius: 10px;
-    }
-    &::webkit-scrollbar-track {
-        background-color: ${(props) => props.theme.color.hoverColor};
-        border-radius: 10px;
-    }
-
     @media ${(props) => props.theme.device.TabletPortrait} {
         margin: 10px 0;
     }
@@ -58,19 +49,18 @@ flex-wrap: wrap;
 
 function ProjectContainer() {
     const [projects, setProjects] = useState(project_data);
-    const [button, setButton] = useState('All');
+    console.log(projects);
 
     const clickFilter = (name) => {
         const new_array = project_data.filter(project => project.category.includes(name));
         setProjects(new_array);
-        setButton(name);
     }
     return(
 
         <ProjectContainerStyle>
             <ProjectFilterContainer>
                 <FilterBtn 
-                onClick={() => {setProjects(project_data); setButton('All');}}>All</FilterBtn>
+                onClick={() => {setProjects(project_data);}}>All</FilterBtn>
                 <FilterBtn 
                 onClick={() => clickFilter('React')}>React</FilterBtn>
                 <FilterBtn 
