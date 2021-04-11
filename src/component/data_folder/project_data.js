@@ -1,6 +1,4 @@
 import movieapp from './project_img/movie-app.png';
-import React from 'react';
-
 
 const project_data = [
     {

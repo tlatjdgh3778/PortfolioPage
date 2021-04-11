@@ -1,4 +1,3 @@
-import styled from 'styled-components';
 
 const size = {
     MobileLandscape: '480px',

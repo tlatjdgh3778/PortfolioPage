@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import HomeContainer from './component/HomeContainer/HomeContainer';
 import ChangeMode from './component/ChangeMode/ChangeMode';
 import GlobalStyle from '../src/style/global';
-import styled, { ThemeProvider } from 'styled-components';
+import { ThemeProvider } from 'styled-components';
 import theme from '../src/style/theme';
 
 function App() {

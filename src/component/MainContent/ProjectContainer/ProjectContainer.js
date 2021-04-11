@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
-import {Github}  from '@styled-icons/boxicons-logos';
 import project_data from '../../data_folder/project_data';
 import ProjectCard from './ProjectCard';
 
