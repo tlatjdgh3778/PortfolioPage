@@ -5,9 +5,7 @@ const GlobalStyle = createGlobalStyle`
 
 
 * {
-    @import url("http://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700");
-    @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
-  font-family: 'Noto Sans KR', "Roboto", sans-serif;
+  font-family: 'Noto Sans KR', sans-serif;
   margin: 0;
   padding: 0;
 
