@@ -9,7 +9,7 @@ const HomeContainerStyle = styled.div`
   align-items: center;
   margin: 9vh auto;
   max-width: 1200px;
-  height: 80vh;
+  height: 78vh;
   
   @media ${(props) => props.theme.device.Laptops} {
     max-width: 992px;
