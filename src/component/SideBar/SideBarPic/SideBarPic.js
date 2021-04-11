@@ -1,9 +1,9 @@
 import React from 'react';
 import styled from 'styled-components';
-import bguna from '../SideBarPic/bguna.jpg';
+import seongho_pic from '../SideBarPic/seongho_pic.jpg';
 
 const PicStyle = styled.img.attrs({
-    src: bguna,
+    src: seongho_pic,
 })`
 margin-top: 50px;
 max-width: 100%;
@@ -12,7 +12,7 @@ border: 1px solid ${(props) => props.theme.color.fontColor};
 height: 20%;
 
     @media ${(props) => props.theme.device.TabletLandscape} {
-        height: 30%;
+        height: 25%;
     }
 `;
 function SideBarPic() {
