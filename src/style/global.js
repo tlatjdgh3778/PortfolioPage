@@ -26,6 +26,7 @@ const GlobalStyle = createGlobalStyle`
 body {
   box-sizing: border-box;
   background-color: ${(props) => props.theme.color.wallpaperColor};
+  transition: 0.7s;
 }
 
 `;
