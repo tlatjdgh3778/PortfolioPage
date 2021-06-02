@@ -1,7 +1,7 @@
 # My Portfolio Page
 프로젝트 관리와 간단한 이력서 느낌의 페이지
 
-[사이트](shimseongho.netlify.app)
+[사이트 바로가기](https://shimseongho.netlify.app/)
 
 ## 기술 스택
 * React
