@@ -60,7 +60,7 @@ function SideBarProfileInfo() {
                 <GithubSpan>github</GithubSpan>
             </GithubLink>
             <ProfileEmail>tjdgh3778@gmail.com</ProfileEmail>
-            <ProfilePhone>+82 10 4508 3778</ProfilePhone>
+            <ProfilePhone>+82 10 4685 3778</ProfilePhone>
         </ProfileInfoContainer>
     );
 }
