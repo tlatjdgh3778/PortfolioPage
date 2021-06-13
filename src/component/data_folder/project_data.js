@@ -1,5 +1,6 @@
 import movieapp from './project_img/movie-app.png';
 import covid19 from './project_img/covid19-main.png';
+import bannergenerator from './project_img/banner-main.png';
 
 const project_data = [
     {
@@ -14,6 +15,13 @@ const project_data = [
         image: covid19,
         github_url: "https://github.com/tlatjdgh3778/covid19",
         project_url: "https://tlatjdgh3778.github.io/covid19/",
+        category: ['React']
+    },
+    {
+        name: 'BannerGenerator',
+        image: bannergenerator,
+        github_url: "https://github.com/tlatjdgh3778/BannerGenerator",
+        project_url: "https://bannergenerator.netlify.app",
         category: ['React']
     },
 ]
