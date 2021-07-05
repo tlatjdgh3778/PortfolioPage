@@ -66,7 +66,7 @@ function ProjectContainer() {
                 onClick={() => clickFilter('VanilaJS')}>VanilaJS</FilterBtn>
             </ProjectFilterContainer>
                 <ProjectList>
-                    {projects.map((project)=>{
+                    {projects.map((project, i)=>{
                         return <ProjectCard key={project.name} project={project}></ProjectCard>
                     })}
                 </ProjectList>

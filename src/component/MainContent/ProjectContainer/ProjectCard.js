@@ -48,7 +48,7 @@ color: ${(props) => props.theme.color.fontColor};
 const ProjectName = styled.span`
 `;
 
-function ProjectCard({key, project}){
+function ProjectCard({ project }){
 const project_url = project.project_url;
 const github_url = project.github_url;
     return(

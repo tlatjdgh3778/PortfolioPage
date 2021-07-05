@@ -20,7 +20,6 @@ box-shadow: 0 0 10px ${(props) => props.theme.color.highlightColor};
 
     @media ${(props) => props.theme.device.TabletLandscape} {
         width: 95%;
-        height: auto;
     }
 `;
 
