@@ -1,10 +1,9 @@
 // import './App.css';
 import React, { useState } from 'react';
-import HomeContainer from './component/HomeContainer/HomeContainer';
-import ChangeMode from './component/ChangeMode/ChangeMode';
-import GlobalStyle from '../src/style/global';
+import HomeContainer from 'components/HomeContainer/HomeContainer';
+import ChangeMode from 'components/ChangeMode/ChangeMode';
+import GlobalStyle from 'style/global';
 import { ThemeProvider } from 'styled-components';
-// import theme from '../src/style/theme';
 import theme from 'style/theme'
 
 function App() {
