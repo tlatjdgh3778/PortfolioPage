@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
-import project_data from '../../data_folder/project_data';
+import projectData from '../../data_folder/project_data';
+// import projectData from 'data/projectData';
 import ProjectCard from './ProjectCard';
 
 const ProjectContainerStyle = styled.div`
@@ -47,11 +48,11 @@ flex-wrap: wrap;
 `;
 
 function ProjectContainer() {
-    const [projects, setProjects] = useState(project_data);
-    console.log(projects);
+    const [projects, setProjects] = useState(projectData);
+    console.log(projectData);
 
     const clickFilter = (name) => {
-        const new_array = project_data.filter(project => project.category.includes(name));
+        const new_array = projects.filter(project => project.category.includes(name));
         setProjects(new_array);
     }
     return(
@@ -59,7 +60,7 @@ function ProjectContainer() {
         <ProjectContainerStyle>
             <ProjectFilterContainer>
                 <FilterBtn 
-                onClick={() => {setProjects(project_data);}}>All</FilterBtn>
+                onClick={() => {setProjects(projectData);}}>All</FilterBtn>
                 <FilterBtn 
                 onClick={() => clickFilter('React')}>React</FilterBtn>
                 <FilterBtn 

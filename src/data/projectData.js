@@ -2,7 +2,7 @@ import movie from './project_img/movie.png';
 import covid19 from './project_img/covid19.png';
 import banner from './project_img/banner.png';
 
-const project_data = [
+const projectData = [
     {
         name: 'Movie Web App',
         image: movie,
@@ -26,4 +26,4 @@ const project_data = [
     },
 ]
 
-export default project_data;
+export default projectData;
