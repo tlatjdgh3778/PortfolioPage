@@ -10,7 +10,7 @@ const HomeContainerStyle = styled.div`
   margin: 9vh auto;
   max-width: 1200px;
   height: 78vh;
-  
+
   @media ${(props) => props.theme.device.Laptops} {
     max-width: 992px;
   }
@@ -20,7 +20,7 @@ const HomeContainerStyle = styled.div`
     flex-direction: column;
   }
   @media ${(props) => props.theme.device.TabletPortrait} {
-    width: 600px;
+    width: auto;
     flex-direction: column;
   }
 `;
