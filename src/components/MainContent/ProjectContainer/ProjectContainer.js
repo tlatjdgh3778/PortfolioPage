@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
-import projectData from '../../data_folder/project_data';
-// import projectData from 'data/projectData';
+import projectData from 'data/projectData';
 import ProjectCard from './ProjectCard';
 
 const ProjectContainerStyle = styled.div`
