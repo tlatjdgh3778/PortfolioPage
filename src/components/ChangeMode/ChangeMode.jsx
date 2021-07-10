@@ -2,7 +2,7 @@
 import React from 'react';
 import * as S from './ChangeMode.style';
 
-function ChangeMode({changeTheme, isDark}) {
+const ChangeMode = ({changeTheme, isDark}) => {
 
     const onClick = () => {
         changeTheme(isDark);
