@@ -1,38 +1,21 @@
 import React from 'react';
-import styled from 'styled-components';
 import SideBarPic from './SideBarPic/SideBarPic';
 import SideBarProfileName from './SideBarProfileName/SideBarProfileName';
 import SideBarProfileInfo from './SideBarProfileInfo/SideBarProfileInfo';
 import SideBarSocialMedia from './SideBarSocialMedia/SideBarSocialMedia';
 import SideBarContact from './SideBarContact/SideBarContact';
+import * as S from './SideBar.style';
 
-const SideBarStyle = styled.div`
-color: ${(props) => props.theme.color.fontColor};
-display: flex;
-flex-direction: column;
-align-items: center;
-border: 2px solid ${(props) => props.theme.color.fontColor};
-background-color: ${(props) => props.theme.color.bgColor};
-height: 100%;
-border-radius: 30px;
-width: 21%;
-box-shadow: 0 0 10px ${(props) => props.theme.color.highlightColor};
-
-    @media ${(props) => props.theme.device.TabletLandscape} {
-        width: 95%;
-    }
-`;
-
-function SideBar() {
+const SideBar = () => {
     return(
-        <SideBarStyle>
+        <S.SideBarStyle>
             <SideBarPic></SideBarPic>
             <SideBarProfileName></SideBarProfileName>
             <SideBarProfileInfo></SideBarProfileInfo>
             <SideBarSocialMedia></SideBarSocialMedia>
             <SideBarContact></SideBarContact>
-        </SideBarStyle>
+        </S.SideBarStyle>
     );
 }
 
-export default SideBar;
+export default SideBar; 
