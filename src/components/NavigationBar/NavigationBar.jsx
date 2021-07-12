@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { NavLink } from 'react-router-dom';
 import * as S from './NavigationBar.style';
 
 const NavigationBar = () => {
@@ -8,12 +9,12 @@ const [page, setPage] = useState('About');
         <S.NavigationBarStyle>
             <S.NavigationBarName>{page}</S.NavigationBarName>
             <S.NavigationBarList>
-                <S.NavLink to="/">
+                <NavLink to="/">
                     {page !== "About" && <S.Btn onClick={() => setPage('About')} value="About">About</S.Btn>}
-                </S.NavLink>
-                <S.NavLink to="/Projects">
+                </NavLink>
+                <NavLink to="/Projects">
                     {page !== "Projects" && <S.Btn onClick={() => setPage('Projects')} value="Projects">Projects</S.Btn>}
-                </S.NavLink>
+                </NavLink>
             </S.NavigationBarList>
         </S.NavigationBarStyle>
     );
