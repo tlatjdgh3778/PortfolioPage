@@ -1,12 +1,11 @@
-// import './App.css';
 import React, { useState } from 'react';
-import HomeContainer from 'components/HomeContainer/HomeContainer';
+import Home from 'components/Home/Home';
 import ChangeMode from 'components/ChangeMode/ChangeMode';
 import GlobalStyle from 'style/global';
 import { ThemeProvider } from 'styled-components';
 import theme from 'style/theme'
 
-function App() {
+const App = () => {
   const [isDark, setIsDark] = useState(false);
   
   const changeTheme = () => {
@@ -19,7 +18,7 @@ function App() {
       <GlobalStyle />
         <div className="App">
           <ChangeMode changeTheme={changeTheme} isDark={isDark}></ChangeMode>
-          <HomeContainer></HomeContainer>
+          <Home></Home>
         </div>
       </ThemeProvider>
     </>
