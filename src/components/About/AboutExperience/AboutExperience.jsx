@@ -1,13 +1,16 @@
 import React from 'react';
-import * as S from 'AboutExperience.style';
+import * as S from './AboutExperience.style';
+import * as GS from 'style/Component.style';
 
 const AboutExperience = () => {
 
     return(
-        <S.ExperienceContainer>
-            <S.ExperienceTitle>Experience</S.ExperienceTitle>
-            <S.ExperienceContent>🤣</S.ExperienceContent>
-        </S.ExperienceContainer>
+        <GS.AboutContentContainer>
+            <GS.AboutContentTitle>Experience</GS.AboutContentTitle>
+            <GS.AboutContent>
+                <S.ExperienceContent>🤣</S.ExperienceContent>
+            </GS.AboutContent>
+        </GS.AboutContentContainer>
     );
 }
 
