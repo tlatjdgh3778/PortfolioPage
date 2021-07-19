@@ -5,7 +5,7 @@ const ProjectCard = ({ project }) => {
 
     const project_url = project.project_url;
     const github_url = project.github_url;
-    
+    console.log('ProjectCard Render');
     return(
             <S.ListContainer>
                 <S.ProjectLink target="_blank" href={project_url}>
@@ -19,4 +19,4 @@ const ProjectCard = ({ project }) => {
     );
 }
 
-export default ProjectCard;
+export default React.memo(ProjectCard);
