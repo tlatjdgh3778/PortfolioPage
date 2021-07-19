@@ -6,6 +6,7 @@ const SendEmail = (e) => {
     window.open('mailto:tjdgh3778@gmail.com')};
 
 const SideBarContact = () => {
+    console.log('SideBarContact Render');
     return(
         <S.SideBarEmailContact onClick={SendEmail}>Contact</S.SideBarEmailContact>
     );

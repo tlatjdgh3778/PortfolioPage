@@ -3,7 +3,7 @@ import * as S from './AboutExperience.style';
 import * as GS from 'style/Component.style';
 
 const AboutExperience = () => {
-
+    console.log('AboutExperience Render');
     return(
         <GS.AboutContentContainer>
             <GS.AboutContentTitle>Experience</GS.AboutContentTitle>

@@ -2,6 +2,7 @@ import React from 'react';
 import * as S from './SideBarProfileInfo.style';
 
 const SideBarProfileInfo = () => {
+    console.log('SideBarProfileInfo Render');
     return(
         <S.ProfileInfoContainer>
             <S.GithubLink target="_blank" href="https://github.com/tlatjdgh3778">

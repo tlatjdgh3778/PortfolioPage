@@ -3,7 +3,7 @@ import React from 'react';
 import * as S from './ChangeMode.style';
 
 const ChangeMode = ({changeTheme, isDark}) => {
-
+    console.log('ChangeMode Render');
     const onClick = () => {
         changeTheme(isDark);
     }

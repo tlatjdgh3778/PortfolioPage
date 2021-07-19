@@ -3,6 +3,7 @@ import * as S from './SideBarSocialMedia.style';
 
 const SideBarSocialMedia = () => {
 
+    console.log('SideBarSocialMedia Render');
     return(
         <S.SocialMediaContainer>
             <S.InstagramLink target="_blank" href="https://www.instagram.com/seongho.shim/">

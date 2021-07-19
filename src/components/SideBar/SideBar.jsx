@@ -7,6 +7,7 @@ import SideBarContact from './SideBarContact/SideBarContact';
 import * as S from './SideBar.style';
 
 const SideBar = () => {
+    console.log('SideBar Render');
     return(
         <S.SideBarStyle>
             <SideBarPic></SideBarPic>

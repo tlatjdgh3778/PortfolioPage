@@ -7,7 +7,8 @@ import * as S from './Home.style';
 import * as GS from 'style/Component.style';
 
 const Home = () => {
-
+    console.log('Home Render');
+    
     return(
         <S.HomeStyle>
             <SideBar></SideBar>

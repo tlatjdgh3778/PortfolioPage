@@ -3,7 +3,7 @@ import { AboutEducation, AboutExperience, AboutIntroduce, AboutSkills } from 'co
 import * as S from './About.style';
 
 const About = () => {
-
+    console.log('About Render');
     return(
         <>
         <S.AboutStyle>

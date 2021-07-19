@@ -3,8 +3,9 @@ import { NavLink } from 'react-router-dom';
 import * as S from './NavigationBar.style';
 
 const NavigationBar = () => {
-const [page, setPage] = useState('About');
-
+    const [page, setPage] = useState('About');
+    
+    console.log('NavigatorBar Render');
     return(
         <S.NavigationBarStyle>
             <S.NavigationBarName>{page}</S.NavigationBarName>

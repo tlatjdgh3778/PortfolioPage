@@ -3,7 +3,7 @@ import * as S from './AboutIntroduce.style';
 import * as GS from 'style/Component.style';
 
 const AboutIntroduce = () => {
-
+    console.log('AboutIntroduce Render');
     return(
         <GS.AboutContentContainer>
             <GS.AboutContentTitle>Introduce</GS.AboutContentTitle>
