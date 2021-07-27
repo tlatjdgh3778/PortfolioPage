@@ -9,13 +9,13 @@ const AboutSkills = () => {
             <GS.AboutContentTitle>Skills</GS.AboutContentTitle>
             <GS.AboutContent>
                 <S.SkillsContent>
-                    💻 Frontend : React, JavaScript, CSS/HTML
+                    💻 Frontend : JavaScript, React, React-Redux
                 </S.SkillsContent>
                 <S.SkillsContent>
-                    ⌨ Dev Tools: github, vscode 
+                    ⌨ Dev Tools: Github, Vscode 
                 </S.SkillsContent>
                 <S.SkillsContent>
-                    🎨 Etc : styled-component
+                    🎨 Etc : Styled-component, Material-UI 
                 </S.SkillsContent>
             </GS.AboutContent>
         </GS.AboutContentContainer>
