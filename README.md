@@ -13,3 +13,7 @@
 * React-Router 를 사용해서 라우팅 하는 방법
 * netlify 사용해서 배포하는 방법
 * ThemeProvider 를 사용해서 공통 스타일 속성을 관리하는 방법
+
+
+### 2021.08.12 update
+* TypeScript 적용 
